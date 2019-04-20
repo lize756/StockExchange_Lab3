@@ -7,8 +7,8 @@ public class Customer {
 	private String id;
 	private double budget;
 	
-	private LinnyList<Actions> walletActions;
-	private LinnyList<Market> walletMarket;
+	private LinnyList<CapitalMarket> walletActions;
+	private LinnyList<ForexMarket> walletMarket;
 	
 	public Customer(String name, String id, double budget) {
 		
@@ -42,19 +42,19 @@ public class Customer {
 		this.budget = budget;
 	}
 
-	public LinnyList<Actions> getWalletActions() {
+	public LinnyList<CapitalMarket> getWalletActions() {
 		return walletActions;
 	}
 
-	public void setWalletActions(LinnyList<Actions> walletActions) {
+	public void setWalletActions(LinnyList<CapitalMarket> walletActions) {
 		this.walletActions = walletActions;
 	}
 
-	public LinnyList<Market> getWalletMarket() {
+	public LinnyList<ForexMarket> getWalletMarket() {
 		return walletMarket;
 	}
 
-	public void setWalletMarket(LinnyList<Market> walletMarket) {
+	public void setWalletMarket(LinnyList<ForexMarket> walletMarket) {
 		this.walletMarket = walletMarket;
 	}
 	

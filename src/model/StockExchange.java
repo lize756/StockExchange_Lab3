@@ -5,8 +5,8 @@ import stack_Linny.LinnyStack;
 public class StockExchange {
 	
 	private String name;
-	private LinnyStack<Actions> actions;
-	private LinnyStack<Market> markets;
+	private LinnyStack<CapitalMarket> actions;
+	private LinnyStack<ForexMarket> markets;
 	
 	public StockExchange(String name) {
 		this.name = name; 
@@ -22,19 +22,19 @@ public class StockExchange {
 		this.name = name;
 	}
 
-	public LinnyStack<Actions> getActions() {
+	public LinnyStack<CapitalMarket> getActions() {
 		return actions;
 	}
 
-	public void setActions(LinnyStack<Actions> actions) {
+	public void setActions(LinnyStack<CapitalMarket> actions) {
 		this.actions = actions;
 	}
 
-	public LinnyStack<Market> getMarkets() {
+	public LinnyStack<ForexMarket> getMarkets() {
 		return markets;
 	}
 
-	public void setMarkets(LinnyStack<Market> markets) {
+	public void setMarkets(LinnyStack<ForexMarket> markets) {
 		this.markets = markets;
 	}
 	
